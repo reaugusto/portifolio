@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <topo-padrao class="animate__animated animate__slideInRight"></topo-padrao>
+  <router-view v-slot="{ Component }">
+    <transition
+      enter-active-class="animate__animated animate__flipInY"
+      leave-active-class="animate__animated animate__flipOutY"
+    >
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopoPadrao from './components/layouts/TopoPadrao.vue'
 
 export default {
+  components: { TopoPadrao },
   name: 'App',
-  components: {
-    HelloWorld
-  }
+
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  body{
+    background-color: rgb(143, 0, 0);
+  }
 </style>
+
