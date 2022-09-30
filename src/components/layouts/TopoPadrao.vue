@@ -41,7 +41,6 @@ export default {
 
      .nav-link:hover, .nav-link:focus{
       color: #f1cd00; 
-      font-size: 20px;
       text-shadow: 0 0 50px #f1cd00,
       0 0 100px #f1cd00,
       0 0 150px #f1cd00,
