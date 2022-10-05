@@ -7,13 +7,17 @@
       <component :is="Component" />
     </transition>
   </router-view>
+  <div class="redeSocial">
+    <rede-social></rede-social>
+  </div>
 </template>
 
 <script>
 import TopoPadrao from '@/components/layouts/TopoPadrao.vue'
+import RedeSocial from './components/layouts/RedeSocial.vue';
 
 export default {
-  components: { TopoPadrao },
+  components: { TopoPadrao, RedeSocial },
   name: 'App',
 
 }
@@ -23,18 +27,18 @@ export default {
     margin: 0;
     padding: 0;
   }
+  .redeSocial{
+    position:fixed;
+    right: 5px;
+    top:30%;
+  }
   body{
-  width: 99vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-color: rgb(99, 99, 99);
-  background-image: radial-gradient(at 80% 0%,hsla(24, 100%, 44%, 1) 0px,transparent 50%),
-    radial-gradient(at 0% 50%, hsla(355, 15%, 19%, 1) 0px, transparent 50%),
-    radial-gradient(at 61% 32%, hsla(277, 100%, 76%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 100%, hsla(38, 100%, 44%, 1) 0px, transparent 50%),
-    radial-gradient(at 80% 100%, hsla(57, 100%, 70%, 1) 0px, transparent 50%),
-    radial-gradient(at 0% 0%, hsla(342, 0%, 16%, 1) 0px, transparent 50%);
+    width: 99vw;
+    height: 100vh;
+    background-repeat: unset;
+    background-size: cover;
+    background: linear-gradient(156deg,  #d7d7d7, #777777,#313131, #272727, #000000);
+
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template> 
-
+<div class="container">
   <div class="row justify-content-center align-items-center mt-5">
     <div class="col col-lg-5 d-lg-flex justify-content-center">
       <img class="img-fluid" src="@/assets/img/profile.png" alt="" />
@@ -35,20 +35,20 @@
         Pai de uma linda menina.
       </p>
     </div>
-    <div class="col-lg-2 d-lg-flex justify-content-end align-items-center">
+    <!-- <div class="col-lg-2 d-lg-flex justify-content-end align-items-center">
       <rede-social></rede-social>
-    </div>
+    </div> -->
   </div>
-
+</div>
 </template>
 <script>
 import VTypical from "vue-typical";
-import RedeSocial from "@/components/layouts/RedeSocial.vue";
+// import RedeSocial from "@/components/layouts/RedeSocial.vue";
 
 export default {
   components: {
     VTypical,
-    RedeSocial,
+    // RedeSocial,
   },
   name: "HomePage",
 }
