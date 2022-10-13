@@ -35,7 +35,7 @@ export default {
   body{
     width: 99vw;
     height: 100vh;
-    background-repeat: unset;
+    background-repeat: repeat-y;
     background-size: cover;
     background: linear-gradient(156deg,  #d7d7d7, #777777,#313131, #272727, #000000);
 
