@@ -1,12 +1,12 @@
 <template>
     <div class="container">
     <div class="row justify-content-center">
-        <div class="col-lg-6 text-center mt-2">
+        <div class="col-lg-6 text-center mt-4">
             <span class="titulo">Tecnologias que utilizo em meus projetos</span>
             
         </div>
     </div>
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center mt-5">
         <div class="col-lg-10 d-flex programacao justify-content-evenly">
             <div class="svg">
                 <svg viewBox="0 0 128 128" @click="activated($event),  visivel = 1">
@@ -70,38 +70,50 @@
     <div class="conteudo" id="html" v-if="(visivel == 1)">
         
         <h3>HTML</h3>
+        <br />
         <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>Utilizada para criar a estrutura e adição de conteúdos as paginas web, quando utilizada corretamente otimiza a busca de termos no site tornando mais efetiva e mais visivel para as máquinas de busca.</p>
+        <p>A muitos anos utilizo a linguagem desde quando site não possui estivo e interatividade</p>
     </div>
 
 
     <div class="conteudo" id="css" v-if="(visivel == 2)">
         <h3>CSS</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>Mais conhecido como folha de estilo. E a forma de dar cara a uma página gerando todo o estilo e organização dos elementos dentro de um site ou aplicação web, possui diversos recursos para otimizar o desenvolvimento e a possibilidade de criar animações de forma mais fácil.</p>
+        <p>Permite criar muito mais do que apenas textos bonitos e organização da pagina, com criatividade é possivel muita coisa</p>
+        <p>Um xodó para todo o front-end, é através do CSS que a criatividade é exposta</p>
     </div>
 
     <div class="conteudo" id="javascript" v-if="(visivel == 3)">
-        <h3>javascript</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <h3>JavaScript</h3>
+        <p>Uma linguagem de programação muito rica e muito utilizada. Pode ser utilizada para tornar uma aplicação web ou um site dinâmico, criando eventos e interações com os elementos. </p>
+        <p>Permite muito mais do que apenas dinamizar uma pagina, a linguagem está sendo muito utilizada no lado dos servidores</p>
+        <p>É um recurso indispensável para qualquer desenvolvedor front-end que se prese</p>
     </div>
     <div class="conteudo" id="vue" v-if="(visivel == 4)">
         <h3>Vue.JS</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>Um dos frameworks javascript existentes no mercado, auxilia muito no desenvilvimento pois simplifica muito no momento de criação de uma aplicação aumentando muito a produtividade</p>
+        <p>Escolhi inicialmente o Vue.Js por sua simplicidade e efetividade, alem de possuir uma curva de aprendizado muito menor ajudando no desenvolvimento do conhecimento</p>
     </div>
     <div class="conteudo" id="bootstrap" v-if="(visivel == 5)">
-        <h3>bootstrap</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <h3>Bootstrap</h3>
+        <p>Assim com oo Vue.js é um framework porem CSS, possui muitos recursos e elementos pre-definidos que ajudam na produtividade do desenvolvedor que precisa apenas adequar a seus projetos</p>
+        <p>Conheci o Bootstrap junto com outros frameworks CSS, decide por utiliza-lo pois pois possui uma grande comunidade, tem uma evelução muito rapida e documentação muito bem organizada, apesar de gostar do CSS puro auxilia muito no desenvolvimento</p>
     </div>
     <div class="conteudo" id="xd" v-if="(visivel == 6)">
         <h3>Adobe XD</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>O Adobe XD é uma ferramente incrivel e simples que ajuda muito na criação de layouts, wireframes e prototipagem. É possivel criar um prototipo quase funcional dando possibilidade de navegação.</p>
+        <p>Meu primeiro contato com o XD foi em um hackaton onde precisa criar de forma rapida os layout da plataforma que iriamos apresentar, ajudou muito pois criar no photosop seria muito mais demorado e menos funcional.</p>
     </div>
     <div class="conteudo" id="figma" v-if="(visivel == 7)">
         <h3>figma</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>Também uma ferramente para criação porem online, hoje muito utilizados por UI/UX designers pois é muito versátil e oferece muito recursos para otimização do trabalho.</p>
+        <p>Uso a ferramenta a pouco tempo e com menos frequencia, mas o suficiente para curtir e muito o que ela tem a oferecer e sua praticidade.</p>
     </div>
     <div class="conteudo" id="ps" v-if="(visivel === 8)">
         <h3>Photoshop</h3>
-        <p>Uma linguagem de marcação utilizada para que os navegadores reconheçam os elementos na pagina</p>
+        <p>O famoso editor de imagens que permite muito, desde o tratamento de imagem, criação de layouts, animações e muito mais.</p>
+        <p>Praticamente cresci utilizando o photoshop, apesar de usar muito menos tenho o maior apresso por ele, está para surgir uma ferramente tão completa.</p>
     </div>
 </transition-group>
 </div>
@@ -187,7 +199,7 @@
     }
 
     .containerConteudo{
-        display: inline;
+        display: flex;
         justify-content: center;
         align-items: center;
         margin-top: 40px;
@@ -195,10 +207,10 @@
         
     }
     .conteudo{
-        width: 100%;
+        width: 80%;
         height: 300px;
         object-fit: cover;
-        background-color: rgba(255, 255, 255, 0.2);
+        color: #FFF;
     } 
 
 </style>
